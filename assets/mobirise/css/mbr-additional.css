@@ -2220,6 +2220,25 @@ video#bgvideo2{
   .cid-r09HQn7546 .inner-container {
     width: 100% !important;
   }
+
+  /*Video:
+  -Set the video as background, make it fixed.
+  -make sure it appears behind all elements.
+  -make it spread across the whole webpage*/
+  video#bgvideo{
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  /*Video:
+  -Set the video as background, make it fixed.
+  -make sure it appears behind all elements.
+  -make it spread across the whole webpage*/
+  video#bgvideo2{
+    max-width: 100%;
+    object-fit: cover;
+  }
+
 }
 
 .cid-r09IfI22FF {
