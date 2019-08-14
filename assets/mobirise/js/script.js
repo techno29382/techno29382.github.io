@@ -109,3 +109,41 @@ $(document).ready(function() {
   $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
     $('body').css('padding-right','0');
   });
+  
+ $('#form-class').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+       type: 'POST',
+       url: 'https://jumprock.co/mail/noproblems',
+       data: $(this).serialize(),
+       beforeSend: function(params) {
+        
+       },
+       complete: function(params) {
+        
+       },
+       success: function(params) {
+        $('#modal-lessons1').modal('hide');
+        $('#success-modal').modal('show');
+       },
+  });
+});
+
+$('#form-phone').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+       type: 'POST',
+       url: 'https://jumprock.co/mail/noproblems',
+       data: $(this).serialize(),
+       beforeSend: function(params) {
+        
+       },
+       complete: function(params) {
+        
+       },
+       success: function(params) {
+        $('#callback-modal').modal('hide');
+        $('#success-modal').modal('show');
+       },
+  });
+});
