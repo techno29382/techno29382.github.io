@@ -78,9 +78,9 @@ webvisor:true
                         <div class="row">
                             <div class="col-md-12">
                                 <div data-form-type="formoid">
-                                        <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка (запись в класс) от посетителя сайта" onsubmit="$('#modal-lessons1').modal('hide');$('#success-modal').modal('show');">
+                                        <form class="form-inline" id="form-class" action="https://jumprock.co/mail/noproblems" method="post">
                                             <div class="modal-body">
-                                                    <input type="hidden" name="email" data-form-email="true" value="LwkHTGDU2iBunQBsoc6R8RciL32fhm356QPClOZBaLKdPCaDyyySmKUjyGwu/RvJKpwBp9YLBMvJaKBZzx0+sCQlE7NR2XxTxasFxlssc2LN8ZB4MPRhHupzmfuxcl08" data-form-field="Email">
+                                                <input type="hidden" name="subject" value="Заявка (запись в класс) от посетителя сайта">
                                                     <div class="text-center">
                                                         <div class="form-group" data-for="name">
                                                                 <label class="sr-only" for="inputNumber">Имя</label>
@@ -94,7 +94,7 @@ webvisor:true
                                                         <br>
                                                         <div class="form-group" data-for="area">
                                                             <label class="sr-only" for="inputNumber">Класс</label>
-                                                            <select class="form-control" style="width: 100%;" name="area" data-form-field="Класс" id="form-select">
+                                                            <select class="form-control" style="width: 100%;" name="message" data-form-field="Класс" id="form-select">
                                                                 <option selected id="option-eng">Инженерный класс</option>
                                                                 <option id="option-it">IT-класс</option>
                                                             </select>
@@ -103,12 +103,8 @@ webvisor:true
                                                         </div>
                                                     </div>
 
-                                                    
-                                                    <div class="form-group" data-for="goal">
-                                                        <input type="text" class="form-control input-lg" style="display: none;" name="goal" data-form-field="Цель" id="inputSite2" placeholder="" value="Заявка">
-                                                    </div>
                                                     <div class="form-group" data-for="time">
-                                                        <input type="text" class="form-control input-lg" style="display: none;" name="time" data-form-field="Время у клиента" id="inputTime2" placeholder="" value="">
+                                                        <input type="text" class="form-control input-lg" style="display: none;" name="email" data-form-field="Время у клиента" id="inputTime2" placeholder="" value="">
                                                     </div>
                                             </div>
                                         </form>
@@ -145,9 +141,9 @@ webvisor:true
                         <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <div data-form-type="formoid">
-                        <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка (обратный звонок) от посетителя сайта" onsubmit="$('#callback-modal').modal('hide');$('#success-modal').modal('show');">
+                        <form class="form-inline" id="form-phone" action="https://jumprock.co/mail/noproblems" method="post">
                             <div class="modal-body">
-                                    <input type="hidden" name="email" data-form-email="true" value="LwkHTGDU2iBunQBsoc6R8RciL32fhm356QPClOZBaLKdPCaDyyySmKUjyGwu/RvJKpwBp9YLBMvJaKBZzx0+sCQlE7NR2XxTxasFxlssc2LN8ZB4MPRhHupzmfuxcl08" data-form-field="Email">
+                                <input type="hidden" name="subject" value="Заявка (обратный звонок) от посетителя сайта">
                                     <div class="text-center">
                                         <div class="form-group" data-for="phone">
                                             <label class="sr-only" for="inputNumber">Телефон</label>
@@ -156,11 +152,8 @@ webvisor:true
                                         </div>
                                     </div>
             
-                                    <div class="form-group" data-for="goal">
-                                        <input type="text" class="form-control input-lg" style="display: none;" name="goal" data-form-field="Цель" id="inputSite" placeholder="" value="Клиент заказал обратный звонок">
-                                    </div>
                                     <div class="form-group" data-for="time">
-                                        <input type="text" class="form-control input-lg" style="display: none;" name="time" data-form-field="Время у клиента" id="inputTime" placeholder="" value="">
+                                        <input type="text" class="form-control input-lg" style="display: none;" name="email" data-form-field="Время у клиента" id="inputTime" placeholder="" value="">
                                     </div>
                             </div>
                         </form>
@@ -1262,7 +1255,7 @@ webvisor:true
   <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/mobirise/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <!-- <script src="assets/formoid/formoid.min.js"></script> -->
   <script src="assets/mobirise/js/aos.js"></script>
   <script>
     AOS.init();
