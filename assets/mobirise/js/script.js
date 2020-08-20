@@ -114,7 +114,7 @@ $(document).ready(function() {
   e.preventDefault();
   $.ajax({
        type: 'POST',
-       url: 'https://jumprock.co/mail/noproblems',
+       url: 'https://chess-znatok.ru/mail-send-znatok.php',
        data: $(this).serialize(),
        beforeSend: function(params) {
         
@@ -133,7 +133,7 @@ $('#form-phone').submit(function(e) {
   e.preventDefault();
   $.ajax({
        type: 'POST',
-       url: 'https://jumprock.co/mail/noproblems',
+       url: 'https://chess-znatok.ru/mail-send-znatok.php',
        data: $(this).serialize(),
        beforeSend: function(params) {
         
